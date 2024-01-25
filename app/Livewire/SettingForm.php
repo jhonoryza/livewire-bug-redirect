@@ -16,7 +16,7 @@ class SettingForm extends Component
     public function save(): void
     {
         session()->flash('alertMessage', 'Settings saved.');
-        redirect()->to('/detail');
-        // $this->redirect('/detail');
+        // redirect()->to('/detail');
+        $this->redirect('/detail');
     }
 }

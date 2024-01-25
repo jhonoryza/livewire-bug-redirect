@@ -1,9 +1,9 @@
 <div>
     <form wire:submit="save">
         
-        <input type="text" wire:mode="name" />
+        <input type="text" wire:model="name" />
         
-        <livewire:file-upload />
+        <livewire:file-upload wire:model="file" />
 
         <button type="submit">Save</button>
     
