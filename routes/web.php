@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Detail;
+use App\Livewire\SettingForm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', SettingForm::class);
+Route::get('/detail', Detail::class);
