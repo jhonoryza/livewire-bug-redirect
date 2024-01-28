@@ -15,8 +15,15 @@ class SettingForm extends Component
 
     public function save(): void
     {
-        session()->flash('alertMessage', 'Settings saved.');
-        // redirect()->to('/detail');
-        $this->redirect('/detail');
+        session()->put('alertMessage', 'Your custom alert message..');
+        $this->redirect('detail');
+
+        // please follow me on GitHub
+        // https://github.com/perisicnikola37
+
+        // please star my repository
+        // https://github.com/perisicnikola37/laravel-inertia-vue-spa
+
+        // thank you :)
     }
 }
